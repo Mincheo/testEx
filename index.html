@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Test Ex</title>
+    <script src="script.js"></script>
+</head>
+
+
+<body>
+<label for="nums">Введите элементы массива для сортировки (значения разделять пробелом):</label>
+
+<input type="text" id="nums" name="nums"/>
+<input type="button" id="sort" name="sort" value="Сортировать" onclick="bubbleSort()"/>
+<input type="button" id="save" name="save" value="Сохранить" onclick="saveSort()"/>
+<p id="result"></p>
+
+<label for="id_sort">Введите идентификатор сортировки, чтобы вывести отсортированный массив:</label>
+<input type="number" id="id_sort" name="id_sort"/>
+<input type="button" id="get_sort" name="get_sort" value="Получить" onclick="getSort()"/>
+<p id="arr_sort"></p>
+
+
+</body>
