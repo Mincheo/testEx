@@ -34,7 +34,7 @@ public class OrmDB {
                 "id_sort integer NOT NULL," +
                 "value integer NOT NULL)");
     }
-    public void saveSortRes(String[] nums) throws SQLException { //Мне нужно еще как-то добыть данные, чтобы написать функцию в бд...
+    public void saveSortRes(String[] nums) throws SQLException {
         System.out.println("Save Sort Result in DB...");
         ResultSet resultSet = sql.stat.executeQuery("SELECT MAX(id_sort) FROM bubble_sort_tab;");
         resultSet.next();
